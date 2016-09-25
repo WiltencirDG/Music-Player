@@ -1,0 +1,14 @@
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\bin\Debug\Music Player.exe.config
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\bin\Debug\Music Player.exe
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\bin\Debug\Music Player.pdb
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\bin\Debug\Interop.WMPLib.dll
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\bin\Debug\AxInterop.WMPLib.dll
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\obj\Debug\Music Player.csprojResolveAssemblyReference.cache
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\obj\Debug\Interop.WMPLib.dll
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\obj\Debug\AxInterop.WMPLib.dll
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\obj\Debug\Music Player.csproj.ResolveComReference.cache
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\obj\Debug\Music_Player.Properties.Resources.resources
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\obj\Debug\Music Player.csproj.GenerateResource.Cache
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\obj\Debug\Music Player.exe
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\obj\Debug\Music Player.pdb
+c:\users\wilte\documents\visual studio 2015\Projects\Music Player\Music Player\obj\Debug\Music_Player.MusicPlayer.resources
