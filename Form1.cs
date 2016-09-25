@@ -22,13 +22,14 @@ namespace Music_Player
         int id = 0;
 
         Random idMus = new Random();
-
+        
         OpenFileDialog openMusic;
 
         bool needRes = false;
         bool isvisible = false;
         bool shuffle = false;
         bool repeat = false;
+        bool endSong = false;
 
         List<string> playlist = new List<string>();
         #endregion
@@ -115,15 +116,8 @@ namespace Music_Player
         // Volume +
         private void plusVolume_Click(object sender, EventArgs e)
         {
-            if (Player.settings.volume == 100)
-            {
-                plusVolume.Enabled = false;
-            }else
-            {
-                plusVolume.Enabled = true;
-                Player.settings.volume += 5;
-                setVolumeText();
-            }
+            Player.settings.volume += 5;
+            setVolumeText();
         }
 
         // Volume -
@@ -164,6 +158,7 @@ namespace Music_Player
         // Clear Button
         private void clear_Click(object sender, EventArgs e)
         {
+            checkPlaylist();
             listBox1.Items.Clear();
             Player.Ctlcontrols.stop();
         }
@@ -187,6 +182,7 @@ namespace Music_Player
                     playlist.RemoveAt(id);
                     listBox1.SetSelected(id, true);
                     Player.URL = (playlist[id]);
+                    checkPlaylist();
                 }
                 else
                 {
@@ -194,6 +190,7 @@ namespace Music_Player
                     listBox1.Items.RemoveAt(id);
                     playlist.RemoveAt(id);
                     countPlaylist();
+                    checkPlaylist();
                     listBox1.SetSelected(last, true);
                     Player.URL = (playlist[last]);
                 }
@@ -221,8 +218,13 @@ namespace Music_Player
         {
             try
             {
-                countPlaylist();
-                if ((shuffle == true) && ( repeat == false))
+                /*countPlaylist();
+                id = listBox1.SelectedIndex +1;
+                listBox1.SetSelected(id, true);
+                this.Player.URL = (playlist[id]);
+                Console.WriteLine(playlist[id]);
+                */
+                /*if ((shuffle == true) && ( repeat == false))
                 {
                     if (checkLastSong() == false)
                     {
@@ -242,7 +244,8 @@ namespace Music_Player
                     {
                         listBox1.SetSelected(first, true);
                         Player.URL = (playlist[first]);
-                        Player.Ctlcontrols.play();}
+                        Player.Ctlcontrols.play();
+                    }
                     else
                     {
                         id = Convert.ToInt32(listBox1.SelectedIndex + 1);
@@ -284,13 +287,13 @@ namespace Music_Player
                         Player.Ctlcontrols.play();
                     }
                 }
-                  
+                */
+
             }
             catch (ArgumentOutOfRangeException)
             {
                 listBox1.SetSelected(first, true);
                 Player.URL = (playlist[first]);
-                Player.Ctlcontrols.play();
             }
         }
 
@@ -357,13 +360,33 @@ namespace Music_Player
         // End of the song
         private void PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
         {
-            if (e.newState == 8)
+            try
             {
-                if (checkLastSong() == true)
+                if (e.newState == 8)
                 {
-                    nextMusicFunc();
+                    Console.WriteLine("Media ended");
+                    int index = listBox1.SelectedIndex +1;
+                    listBox1.SetSelected(index, true);
+                    Player.URL = @playlist[index];
+                    Console.WriteLine(playlist[index]);
+                    //nextMusicFunc();
+
+                    /*if (endSong == false)
+                    {
+                        endSong = true;
+                        nextMusicFunc();
+                    }
+                    else
+                    {
+                        endSong = false;
+                        Player.Ctlcontrols.stop();
+                    }
+                    */
                 }
-                
+            }
+            catch
+            {
+                Console.WriteLine("ERRO PLAYSTATECHANGE");
             }
         }
 
@@ -374,11 +397,23 @@ namespace Music_Player
             {
                 nextMusic.Enabled = false;
                 prevMusic.Enabled = false;
+                playButton.Enabled = false;
+                stopButton.Enabled = false;
+                shuffleButton.Enabled = false;
+                repeatButton.Enabled = false;
+                clearButton.Enabled = false;
+                removeButton.Enabled = false;
             }
             else
             {
                 nextMusic.Enabled = true;
                 prevMusic.Enabled = true;
+                playButton.Enabled = true;
+                stopButton.Enabled = true;
+                shuffleButton.Enabled = true;
+                repeatButton.Enabled = true;
+                clearButton.Enabled = true;
+                removeButton.Enabled = true;
             }
         }
 
@@ -392,7 +427,7 @@ namespace Music_Player
         private bool checkLastSong()
         {
             countPlaylist();
-            if (listBox1.SelectedIndex == last)
+            if (endSong == true)
             {
                 return true;
             }

@@ -63,7 +63,7 @@
             this.Player.Location = new System.Drawing.Point(0, 24);
             this.Player.Name = "Player";
             this.Player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Player.OcxState")));
-            this.Player.Size = new System.Drawing.Size(441, 217);
+            this.Player.Size = new System.Drawing.Size(790, 416);
             this.Player.TabIndex = 0;
             this.Player.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.PlayStateChange);
             // 
@@ -74,7 +74,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(441, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(790, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -111,7 +111,7 @@
             // playButton
             // 
             this.playButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.playButton.Location = new System.Drawing.Point(13, 247);
+            this.playButton.Location = new System.Drawing.Point(13, 446);
             this.playButton.Name = "playButton";
             this.playButton.Size = new System.Drawing.Size(54, 23);
             this.playButton.TabIndex = 2;
@@ -122,7 +122,7 @@
             // stopButton
             // 
             this.stopButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.stopButton.Location = new System.Drawing.Point(73, 247);
+            this.stopButton.Location = new System.Drawing.Point(73, 446);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(41, 23);
             this.stopButton.TabIndex = 3;
@@ -133,7 +133,7 @@
             // plusVolume
             // 
             this.plusVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.plusVolume.Location = new System.Drawing.Point(359, 247);
+            this.plusVolume.Location = new System.Drawing.Point(708, 446);
             this.plusVolume.Name = "plusVolume";
             this.plusVolume.Size = new System.Drawing.Size(20, 20);
             this.plusVolume.TabIndex = 5;
@@ -144,7 +144,7 @@
             // minusVolume
             // 
             this.minusVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.minusVolume.Location = new System.Drawing.Point(416, 247);
+            this.minusVolume.Location = new System.Drawing.Point(765, 446);
             this.minusVolume.Name = "minusVolume";
             this.minusVolume.Size = new System.Drawing.Size(20, 20);
             this.minusVolume.TabIndex = 6;
@@ -156,7 +156,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(385, 250);
+            this.label1.Location = new System.Drawing.Point(734, 449);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 7;
@@ -166,7 +166,7 @@
             // playlistButton
             // 
             this.playlistButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.playlistButton.Location = new System.Drawing.Point(294, 247);
+            this.playlistButton.Location = new System.Drawing.Point(643, 446);
             this.playlistButton.Name = "playlistButton";
             this.playlistButton.Size = new System.Drawing.Size(51, 23);
             this.playlistButton.TabIndex = 8;
@@ -183,14 +183,14 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(3, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(197, 160);
+            this.listBox1.Size = new System.Drawing.Size(197, 368);
             this.listBox1.TabIndex = 9;
             this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
             // 
             // clearButton
             // 
             this.clearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.clearButton.Location = new System.Drawing.Point(12, 181);
+            this.clearButton.Location = new System.Drawing.Point(12, 380);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(41, 23);
             this.clearButton.TabIndex = 10;
@@ -201,7 +201,7 @@
             // removeButton
             // 
             this.removeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.removeButton.Location = new System.Drawing.Point(68, 181);
+            this.removeButton.Location = new System.Drawing.Point(68, 380);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(70, 23);
             this.removeButton.TabIndex = 11;
@@ -212,7 +212,7 @@
             // nextMusic
             // 
             this.nextMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.nextMusic.Location = new System.Drawing.Point(144, 247);
+            this.nextMusic.Location = new System.Drawing.Point(144, 446);
             this.nextMusic.Name = "nextMusic";
             this.nextMusic.Size = new System.Drawing.Size(23, 23);
             this.nextMusic.TabIndex = 12;
@@ -223,7 +223,7 @@
             // prevMusic
             // 
             this.prevMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.prevMusic.Location = new System.Drawing.Point(120, 247);
+            this.prevMusic.Location = new System.Drawing.Point(120, 446);
             this.prevMusic.Name = "prevMusic";
             this.prevMusic.Size = new System.Drawing.Size(23, 23);
             this.prevMusic.TabIndex = 13;
@@ -234,7 +234,7 @@
             // shuffleButton
             // 
             this.shuffleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.shuffleButton.Location = new System.Drawing.Point(189, 247);
+            this.shuffleButton.Location = new System.Drawing.Point(189, 446);
             this.shuffleButton.Name = "shuffleButton";
             this.shuffleButton.Size = new System.Drawing.Size(23, 23);
             this.shuffleButton.TabIndex = 14;
@@ -245,7 +245,7 @@
             // repeatButton
             // 
             this.repeatButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.repeatButton.Location = new System.Drawing.Point(218, 247);
+            this.repeatButton.Location = new System.Drawing.Point(218, 446);
             this.repeatButton.Name = "repeatButton";
             this.repeatButton.Size = new System.Drawing.Size(23, 23);
             this.repeatButton.TabIndex = 15;
@@ -260,9 +260,9 @@
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Controls.Add(this.clearButton);
             this.panel1.Controls.Add(this.removeButton);
-            this.panel1.Location = new System.Drawing.Point(241, 24);
+            this.panel1.Location = new System.Drawing.Point(590, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 217);
+            this.panel1.Size = new System.Drawing.Size(200, 416);
             this.panel1.TabIndex = 16;
             this.panel1.Visible = false;
             // 
@@ -270,7 +270,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(441, 278);
+            this.ClientSize = new System.Drawing.Size(790, 477);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.repeatButton);
             this.Controls.Add(this.shuffleButton);
